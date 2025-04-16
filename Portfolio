@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Engineering Flow Diagrams - Sarang Patil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #3498db;
+        }
+        h2 {
+            color: #2c3e50;
+            padding: 10px 15px;
+            background-color: #ecf0f1;
+            border-left: 5px solid #3498db;
+            margin-top: 30px;
+        }
+        .diagram-container {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+        }
+        .outcomes {
+            margin: 15px 0;
+            padding: 10px 15px;
+            background-color: #e3f2fd;
+            border-left: 5px solid #1976d2;
+            font-style: italic;
+        }
+        .tech-highlights {
+            margin: 15px 0;
+            padding: 10px 15px;
+            background-color: #f5f5f5;
+            border-left: 5px solid #616161;
+        }
+        .diagram-container img {
+            width: 100%;
+            height: auto;
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Engineering Flow Diagrams</h1>
+        <p style="text-align: center; font-size: 18px;">Sarang Sunil Patil's Professional Experience</p>
+        
+        <!-- USF Research Project -->
+        <h2>1. University of South Florida Research Project (2024-Present)</h2>
+        <div class="diagram-container">
+            <img src="/api/placeholder/900/400" alt="Healthcare Data Processing Workflow" />
+            
+            <div class="mermaid-code" style="display: none;">
+            graph LR
+                A[Healthcare Data<br>NEDS + NIS Datasets<br>AWS S3] --> B[Data Processing<br>Databricks]
+                B --> C[Transformation<br>PySpark<br>Complex SQL]
+                C --> D[Data Analysis<br>Patient Outcomes<br>Resource Utilization]
+                D --> E[Visualization<br>Power BI Dashboards]
+                
+                style A fill:#e1f5fe,stroke:#0288d1
+                style B fill:#f3e5f5,stroke:#7b1fa2
+                style C fill:#f3e5f5,stroke:#7b1fa2
+                style D fill:#f3e5f5,stroke:#7b1fa2
+                style E fill:#fff3e0,stroke:#ff9800
+            </div>
+            
+            <!-- Architecture Description -->
+            <div style="margin-top: 20px;">
+                <p><strong>Architecture Components:</strong></p>
+                <ul>
+                    <li><strong>Data Sources:</strong> NEDS and NIS healthcare datasets stored in AWS S3 (30+ million records)</li>
+                    <li><strong>Data Processing:</strong> Databricks for scalable processing workflows</li>
+                    <li><strong>Transformation:</strong> PySpark for distributed data cleansing and preprocessing</li>
+                    <li><strong>Analysis:</strong> Complex SQL queries for data extraction, aggregation, and filtering</li>
+                    <li><strong>Visualization:</strong> Power BI dashboards for real-time metric tracking</li>
+                </ul>
+            </div>
+            
+            <!-- Outcomes -->
+            <div class="outcomes">
+                <p><strong>Outcomes:</strong> 20% optimization in patient flow management, 25% improvement in hospital resource management and patient care quality</p>
+            </div>
+            
+            <!-- Technical Highlights -->
+            <div class="tech-highlights">
+                <p><strong>Technical Highlights:</strong></p>
+                <ul>
+                    <li>Developed scalable data processing workflows on Databricks to analyze the National Emergency Department Sample (NEDS) dataset of over 30 million records</li>
+                    <li>Designed and optimized complex SQL queries to extract, aggregate, and filter data from large-scale healthcare datasets</li>
+                    <li>Employed PySpark for efficient distributed data cleansing and preprocessing, transforming raw data into high-quality datasets</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- SWISS RE Internship -->
+        <h2>2. SWISS RE Data Engineering Internship (2024)</h2>
+        <div class="diagram-container">
+            <img src="/api/placeholder/900/450" alt="ETL Pipeline Architecture" />
+            
+            <div class="mermaid-code" style="display: none;">
+            graph TD
+                A[Data Sources<br>SQL Servers<br>REST APIs<br>Amazon S3] --> B[ETL Process<br>AWS Glue<br>PySpark]
+                B --> C[Data Storage<br>Amazon S3]
+                C --> D[Data Modeling<br>DBT<br>SQL-based Models]
+                D --> E[Data Warehouse<br>For Analytics]
+                
+                F[Security<br>AWS Secrets Manager<br>IAM Policies] --> D
+                G[Orchestration<br>Apache Airflow] --> B
+                G --> C
+                G --> D
+                
+                style A fill:#e1f5fe,stroke:#0288d1
+                style B fill:#f3e5f5,stroke:#7b1fa2
+                style C fill:#e8f5e9,stroke:#388e3c
+                style D fill:#f3e5f5,stroke:#7b1fa2
+                style E fill:#fff3e0,stroke:#ff9800
+                style F fill:#fceae5,stroke:#ff9900
+                style G fill:#f5f5f5,stroke:#616161
+            </div>
+            
+            <!-- Architecture Description -->
+            <div style="margin-top: 20px;">
+                <p><strong>Architecture Components:</strong></p>
+                <ul>
+                    <li><strong>Data Sources:</strong> SQL Servers, REST APIs, Amazon S3</li>
+                    <li><strong>ETL Process:</strong> AWS Glue, PySpark, DBT</li>
+                    <li><strong>Data Modeling:</strong> DBT for reusable and modular SQL-based models</li>
+                    <li><strong>Orchestration:</strong> Apache Airflow for end-to-end workflow automation</li>
+                    <li><strong>Security:</strong> AWS Secrets Manager, IAM policies for data governance</li>
+                </ul>
+            </div>
+            
+            <!-- Outcomes -->
+            <div class="outcomes">
+                <p><strong>Outcomes:</strong> 40% improvement in data processing efficiency, 30% reduction in pipeline failures, enhanced data security and governance</p>
+            </div>
+            
+            <!-- Technical Highlights -->
+            <div class="tech-highlights">
+                <p><strong>Technical Highlights:</strong></p>
+                <ul>
+                    <li>Designed and implemented scalable ETL pipelines using AWS Glue, PySpark, and DBT, automating the extraction, transformation, and loading processes</li>
+                    <li>Leveraged DBT for data modeling and transformation, creating reusable and modular SQL-based models with automated quality checks</li>
+                    <li>Orchestrated end-to-end data workflows with Apache Airflow, integrating AWS Glue and DBT to automate task scheduling and execution</li>
+                    <li>Enhanced data security and governance by integrating AWS Secrets Manager and enforcing IAM policies</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- ACCENTURE Role -->
+        <h2>3. ACCENTURE Data Engineering Role (2022-2023)</h2>
+        <div class="diagram-container">
+            <img src="/api/placeholder/900/400" alt="Teradata to AWS Migration Architecture" />
+            
+            <div class="mermaid-code" style="display: none;">
+            graph LR
+                A[Source System<br>Teradata<br>Financial Datasets] --> B[Migration Tools<br>PySpark Scripts<br>Optimization Techniques]
+                B --> C[AWS Data Lake<br>S3]
+                B --> D[Amazon Redshift]
+                C --> E[Automation<br>Jenkins<br>AWS Lambda]
+                D --> E
+                
+                style A fill:#e1f5fe,stroke:#0288d1
+                style B fill:#f3e5f5,stroke:#7b1fa2
+                style C fill:#fceae5,stroke:#ff9900
+                style D fill:#fceae5,stroke:#ff9900
+                style E fill:#f5f5f5,stroke:#616161
+            </div>
+            
+            <!-- Architecture Description -->
+            <div style="margin-top: 20px;">
+                <p><strong>Architecture Components:</strong></p>
+                <ul>
+                    <li><strong>Source System:</strong> Teradata (Financial datasets)</li>
+                    <li><strong>Migration Tools:</strong> PySpark scripts for data transformation</li>
+                    <li><strong>Target Systems:</strong> Amazon Redshift, AWS Data Lake</li>
+                    <li><strong>Process Automation:</strong> Jenkins, AWS Lambda for CI/CD integration</li>
+                    <li><strong>Optimization Techniques:</strong> Broadcast joins, partitioning, caching</li>
+                </ul>
+            </div>
+            
+            <!-- Outcomes -->
+            <div class="outcomes">
+                <p><strong>Outcomes:</strong> 40% query performance improvement, 30% reduction in infrastructure costs, 50% faster data ingestion</p>
+            </div>
+            
+            <!-- Technical Highlights -->
+            <div class="tech-highlights">
+                <p><strong>Technical Highlights:</strong></p>
+                <ul>
+                    <li>Developed and optimized PySpark scripts to migrate large-scale financial datasets from Teradata to Amazon Redshift</li>
+                    <li>Designed and implemented ETL workflows using AWS Glue, successfully integrating complex financial data from Teradata into an AWS Data Lake</li>
+                    <li>Optimized Spark-based transformations by implementing broadcast joins, partitioning, and caching</li>
+                    <li>Automated ETL pipeline deployments using Jenkins and AWS Lambda, ensuring seamless CI/CD integration</li>
+                    <li>Developed advanced SQL queries leveraging CTEs, joins, aggregations, and window functions</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Reddit Project -->
+        <h2>4. Reddit Data Pipeline Project</h2>
+        <div class="diagram-container">
+            <img src="/api/placeholder/900/450" alt="Reddit Data Pipeline Architecture" />
+            
+            <div class="mermaid-code" style="display: none;">
+            graph TD
+                A[Data Source<br>Reddit API] --> B[Raw Storage<br>Amazon S3]
+                B --> C[Processing<br>AWS Glue]
+                C --> D[Data Warehouse<br>Amazon Redshift]
+                D --> E[BI Tools<br>Tableau/Power BI]
+                
+                F[Query Engine<br>Amazon Athena] --> D
+                C --> F
+                
+                G[Workflow Orchestration<br>Apache Airflow<br>Celery] --> B
+                G --> C
+                G --> D
+                
+                style A fill:#e1f5fe,stroke:#0288d1
+                style B fill:#e8f5e9,stroke:#388e3c
+                style C fill:#f3e5f5,stroke:#7b1fa2
+                style D fill:#fceae5,stroke:#ff9900
+                style E fill:#fff3e0,stroke:#ff9800
+                style F fill:#fceae5,stroke:#ff9900
+                style G fill:#f5f5f5,stroke:#616161
+            </div>
+            
+            <!-- Architecture Description -->
+            <div style="margin-top: 20px;">
+                <p><strong>Architecture Components:</strong></p>
+                <ul>
+                    <li><strong>Data Source:</strong> Reddit API for data extraction</li>
+                    <li><strong>Storage:</strong> Amazon S3 for raw and transformed data storage</li>
+                    <li><strong>Processing:</strong> AWS Glue for ETL processes and data transformation</li>
+                    <li><strong>Query Engine:</strong> Amazon Athena for SQL-based analysis</li>
+                    <li><strong>Data Warehouse:</strong> Amazon Redshift for analytics and querying</li>
+                    <li><strong>Orchestration:</strong> Apache Airflow with Celery for workflow management</li>
+                    <li><strong>Visualization:</strong> Tableau/Power BI for business intelligence</li>
+                </ul>
+            </div>
+            
+            <!-- Outcomes -->
+            <div class="outcomes">
+                <p><strong>Outcomes:</strong> Improved data processing efficiency, real-time insights, and reduced operational costs through automation</p>
+            </div>
+            
+            <!-- Technical Highlights -->
+            <div class="tech-highlights">
+                <p><strong>Technical Highlights:</strong></p>
+                <ul>
+                    <li>Built a seamless ETL pipeline to extract Reddit data using its API, store raw data in Amazon S3, transform it with AWS Glue and Athena, and load it into Amazon Redshift for advanced analytics</li>
+                    <li>Improved data processing efficiency, real-time insights, and automation with Apache Airflow and Celery</li>
+                    <li>Implemented robust error handling and monitoring to ensure pipeline reliability</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Technical Stack Summary -->
+        <h2>Technical Stack Summary</h2>
+        <div style="margin: 20px 0; padding: 20px; border: 1px solid #ddd; border-radius: 5px; background-color: #f8f9fa;">
+            <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                <div style="flex: 1; min-width: 200px;">
+                    <h3 style="color: #2c3e50; border-bottom: 1px solid #3498db;">Data Processing & Storage</h3>
+                    <ul>
+                        <li><strong>Big Data Technologies:</strong> Databricks, Apache Spark, PySpark, Hadoop</li>
+                        <li><strong>Databases:</strong> PostgreSQL, Oracle, SQL Server, Amazon Redshift</li>
+                        <li><strong>Cloud Storage:</strong> AWS S3, Azure Blob Storage</li>
+                    </ul>
+                </div>
+                
+                <div style="flex: 1; min-width: 200px;">
+                    <h3 style="color: #2c3e50; border-bottom: 1px solid #3498db;">ETL & Orchestration</h3>
+                    <ul>
+                        <li><strong>ETL Tools:</strong> AWS Glue, DBT, Informatica, SSIS</li>
+                        <li><strong>Workflow Management:</strong> Apache Airflow, Celery</li>
+                        <li><strong>CI/CD:</strong> Jenkins, AWS Lambda</li>
+                    </ul>
+                </div>
+                
+                <div style="flex: 1; min-width: 200px;">
+                    <h3 style="color: #2c3e50; border-bottom: 1px solid #3498db;">Visualization & Analysis</h3>
+                    <ul>
+                        <li><strong>BI Tools:</strong> Tableau, Power BI, Looker, Qlik Sense</li>
+                        <li><strong>Query Engines:</strong> Amazon Athena, Azure Synapse Analytics</li>
+                    </ul>
+                </div>
+                
+                <div style="flex: 1; min-width: 200px;">
+                    <h3 style="color: #2c3e50; border-bottom: 1px solid #3498db;">Infrastructure & DevOps</h3>
+                    <ul>
+                        <li><strong>Containerization:</strong> Docker, Kubernetes</li>
+                        <li><strong>Cloud Platforms:</strong> AWS (S3, EC2, Redshift, EMR, Glue, Lambda), Azure</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Prepared by Sarang Sunil Patil for Data Engineering Interviews</p>
+            <p>Contact: sarangsunilpatil@gmail.com | (813)-414-1132</p>
+        </div>
+    </div>
+
+    <script>
+        // This would be where a Mermaid script would go if you were able to use external libraries
+        // Since we can't in this context, the images serve as placeholders
+    </script>
+</body>
+</html>
