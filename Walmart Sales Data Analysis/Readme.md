@@ -190,9 +190,5 @@ The EDA process is undertaken to address the specified questions and achieve the
 4. Which customer type pays the most in VAT?
 
 
-## Support
 
-If you have any doubts, queries or, suggestions then, please connect with me on [LinkedIn](https://www.linkedin.com/in/faizanxmulla/).
-
-Do ⭐ the repository, if it inspired you, gave you ideas of your own or helped you in any way !!
 
